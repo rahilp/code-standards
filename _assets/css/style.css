@@ -149,20 +149,20 @@ input:invalid, textarea:invalid {
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #00a0b1;
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #FF5E99;
+  background: #00a0b1;
   color: #fff;
   text-shadow: none;
 }
 
 /* j.mp/webkit-tap-highlight-color */
 a:link {
-  -webkit-tap-highlight-color: #FF5E99;
+  -webkit-tap-highlight-color: #00a0b1;
 }
 
 /* Make buttons play nice in IE:
@@ -181,7 +181,7 @@ button {
 body {
   background: #fff;
   color: #444444;
-  border-top: 5px solid #f23109;
+  border-top: 5px solid #0099ff;
 }
 
 figure {
@@ -302,7 +302,7 @@ p, ol, ul {
 /* Headers (h1, h2, etc) have no default font-size or margin;define those yourself */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", sans-serif;
-  color: #f23109;
+  color: #0099ff;
   position: relative;
   margin-top: 20px;
 }
@@ -343,7 +343,7 @@ h5 {
 
 h2::before {
   content: '{ }';
-  font-family: Calibri,AlexandriaBold,Arial,Helvetica,sans-serif;
+  font-family: Arial,Helvetica,sans-serif;
   color: white;
   border-radius: 100px;
   padding-top: 6px;
@@ -550,15 +550,15 @@ header canvas {
 }
 
 .menu-open .menu-button:after, .menu-open .menu-button:before {
-  background-color: #f23109;
+  background-color: #0099ff;
 }
 
 .menu-open .menu-button {
-  border-bottom: 5px solid #f23109;
+  border-bottom: 5px solid #0099ff;
 }
 
 header h1 a {
-  background: url("../img/orange.svg") no-repeat 0 0;
+  background: url("../img/NR_Logo.svg") no-repeat 0 0;
   background-size: auto 80%;
   overflow: hidden;
   text-indent: 200%;
@@ -607,7 +607,7 @@ header .social #linkback:hover {
 }
 
 #linkback span {
-  color: #f23109;
+  color: #0099ff;
 }
 
 #linkback:hover {
@@ -627,7 +627,7 @@ header .social #linkback:hover {
 }
 
 .box_notice {
-  background: #f23109;
+  background: #0099ff;
   color: #ffffff;
 }
 
@@ -746,7 +746,7 @@ header .social #linkback:hover {
     width: 100%;
   }
   .header-logo {
-    background: url("../img/logo-roundarchisobar.png") no-repeat 0 0;
+    background: url("http://newellrubbermaid.com/SiteCollectionImages/logo.png") no-repeat 0 0;
   }
   h1, h2, h3 {
     /* color:#f30; */
@@ -786,7 +786,7 @@ header .social #linkback:hover {
     border-top: 90px solid #fff;
   }
   header {
-    border-top: 5px solid #f23109;
+    border-top: 5px solid #0099ff;
     position: fixed;
     padding-left: 0px;
     z-index: 5;
