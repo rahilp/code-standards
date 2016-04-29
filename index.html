@@ -6,9 +6,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>ISOBAR Front-end Code Standards &amp; Best Practices | Newell Rubbermaid</title>
-    <meta name="description" content="Newell Rubbermaid&#x27;s Coding Standards and Frontend development Best Practices">
-    <meta name="keywords" content="Newell Rubbermaid code standards, coding standards, frontend development, frontend best practices, html code standards, html5 code standards, css code standards, best code practices, development, frontend development">
+    <title>Newell Brands Frontend Code Standards &amp; Best Practices | Newell Brands</title>
+    <meta name="description" content="Newell Brands&#x27;s Coding Standards and Frontend development Best Practices">
+    <meta name="keywords" content="Newell Brands code standards, coding standards, frontend development, frontend best practices, html code standards, html5 code standards, css code standards, best code practices, development, frontend development">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon-precomposed" href="ios-icon.png"/>
@@ -27,9 +27,9 @@
 <div class="container">
         
     <header role="banner">
-                <h1><a class="header-logo" href="http://www.isobar.com/us/home">Newell Rubbermaid</a></h1>
+                <h1><a class="header-logo" href="http://newellbrands.com">Newell Brands</a></h1>
                 <ul class="social">
-                    <li><a href="http://www.isobar.com/us/home" id="linkback">Return to Newell Rubbermaid</a></li>
+                    <li class="h1"><h4>Frontend Code Standards</h4></li>
                 </ul>
                 <div class="menu-button">
                 </div>
@@ -39,9 +39,9 @@
                 
 <article>
 
-<section><h1 id="isobar-front-end-code-standards">Newell Rubbermaid Front-end Code Standards</h1>
+<section><h1 id="nb-front-end-code-standards">Newell Brands Front-end Code Standards</h1>
 <h2 id="introduction">Introduction</h2>
-<p>This document contains the guidelines and best practices for the front-end web development team at Newell Rubbermaid. </p>
+<p>This document contains the guidelines and best practices for the front-end web development team at Newell Brands. </p>
 <p>Each item here represents either:</p>
 <ol>
 <li>A reminder to follow existing standards or industry conventions,</li>
@@ -168,7 +168,7 @@ It&#39;s recognized that the same conventions for all projects, clients, and tea
 <p>While current standards designate certain closing elements and even document level elements as optional, use all open and closing elements nested in the correct ways to ensure maximum compatibility and clarity of document structure. </p>
 <p>Generally speaking, self-closing XML (i.e. XHTML, XML) style tags are not necessary.</p>
 <pre><code class="language-markup">&lt;!-- closing &quot;/&quot; is not necessary --&gt;
-&lt;img src=&quot;/logo.png&quot; alt=&quot;ISOBAR&quot;&gt;
+&lt;img src=&quot;/logo.png&quot; alt=&quot;nb&quot;&gt;
 
 &lt;!-- include closing tags, however --&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit:&lt;/p&gt;
@@ -477,7 +477,7 @@ While performance of CSS selectors has been a debated topic, browsers perform qu
 </ul>
 <p>For these reasons it is often best to go with the most simple, basic set of conventions possible, based on obvious patterns.</p>
 <h4 id="a-simple-css-code-pattern">A Simple CSS Code Pattern</h4>
-<!-- Newell Rubbermaid Component Pattern 
+<!-- Newell Brands Component Pattern 
     This entire section might be best left out, I don't know if it goes 
     too far for the document? From there down to "Utilities"
 -->
@@ -898,65 +898,6 @@ The basic idea is an &quot;inversion of control&quot; in the code. This is debat
 │   │   │   ├── view01.js
 │   │   │   ├── view02.js
 │   │   │   ├── ...</code></pre>
-<h3 id="next-steps-amp-javascript-resources">Next Steps &amp; JavaScript Resources</h3>
-<p>There is an enormous volume of JavaScript reference material out in the wild today. We hope to add more at some point but here are various topics worth following up on:</p>
-<!-- @todo: clean this up, add links -->
-
-<ul>
-<li>Debugging JavaScript</li>
-<li><a href="https://github.com/addyosmani/es6-equivalents-in-es5">Learning more about ES6</a></li>
-<li><a href="http://addyosmani.com/resources/essentialjsdesignpatterns">JavaScript Design Patterns</a></li>
-<li>Unit Testing JavaScript code</li>
-<li><a href="https://nodejs.org/">Node.js</a></li>
-<li>Compare <a href="http://todomvc.com/">JS Frameworks, Frameworks, and more Frameworks</a></li>
-<li><a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/">Baseline For Front End Developers</a></li>
-<li><a href="http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/">JavaScript Style Guides and Beautifiers</a></li>
-<li><a href="http://javascript.crockford.com/code.html">Douglas Crockford&#39;s JS Code Conventions</a></li>
-<li><a href="http://shop.oreilly.com/product/0636920025245.do">Maintainable JavaScript Book</a></li>
-<li><a href="http://www.slideshare.net/nzakas/maintainable-javascript-2012">Maintainable JavaScript Presentation</a></li>
-<li><a href="https://speakerdeck.com/addyosmani/large-scale-javascript-application-architecture">Large Scale JavaScript Applications</a></li>
-</ul>
-<p>For more current links and references, please see <a href="https://github.com/isobar-idev/code-standards/wiki/Useful-Links-and-Resources">our Wiki on Github</a>.</p>
-<aside class="box">
-<p><strong>Note:</strong><br>We could write a book on JavaScript frameworks and what we&#39;ve learned there, but this isn&#39;t the time. We may add more in the near future.</p>
-</aside>
-
-<!-- 
-
-Exceptional Sources
-Eloquent JavaScript
-    http://eloquentjavascript.net/
-http://perfectionkills.com/
-
-JavaScript Weekly
-http://javascriptweekly.com/archive/
-
-├── _assets/
-│   ├── readme.md
-│   ├── css
-│   │   ├── example01.css
-│   │   ├── example02.css
-│   │   ├── vendor
-│   │   │   ├── source01.css
-│   │   │   ├── source02.css
-│   │   │   ├── ...
-│   ├── js
-│   │   ├── app.js
-│   │   ├── tools.js
-│   │   ├── ...
-│   │   ├── vendor
-│   │   │   ├── source01.js
-│   │   │   ├── source02.js
-│   │   │   ├── ...
-│   ├── img
-│   │   ├── example00.png
-│   │   ├── ...
-│   │   ├── icons
-│   │   │   ├── example01.gif
-│   │   │   ├── example02.png
-│   │   │   ├── ...
- -->
-
 
 </section>
 <section><h2 id="responsive-web-design">Responsive Web Design</h2>
@@ -1001,9 +942,6 @@ http://javascriptweekly.com/archive/
 <li>What if a device went off-line during usage of a feature?</li>
 <li>The best ways to detect support for various features (e.g. Modernizr, etc.).</li>
 </ul>
-<aside class="box">
-  <p>Brad Frost&#39;s <a href="https://bradfrost.github.io/this-is-responsive/patterns.html">Responsive Design Patterns</a> and <a href="https://bradfrost.github.io/this-is-responsive/resources.html">Responsive Design Resources</a> are two great resources that continue to grow due to user contributions.</p>
-</aside>
 
 <h4 id="to-use-a-pre-built-grid-or-not-">To Use A Pre-built Grid Or Not?</h4>
 <!-- @todo: content on grid systems -->
@@ -1011,10 +949,6 @@ http://javascriptweekly.com/archive/
 <p>Sometimes CSS grid frameworks are a good place to start ... but sometimes not.</p>
 <p>They must match the design in terms of flexibility.</p>
 <p>It&#39;s critical a developer learn the basics of how grid systems</p>
-<p>It may be beneficial to learn the coming Flexbox techniques as well.</p>
-<aside class="box">
-  <p>While using a Framework isn&#39;t always the way to go, there is much to be learned from examining <a href="https://bradfrost.github.io/this-is-responsive/resources.html#frameworks">how they work and how they are put together</a>.</p>
-</aside>
 
 <h4 id="progressive-enhancement">Progressive Enhancement</h4>
 <p>Since mobile phones and tablets are frequently the lower end in terms of capabilities, it is recommended to start with building the mobile experience first, and gradually add features. With this in mind, RWD could be considered a type of <a href="https://www.filamentgroup.com/dwpe/">Progressive Enhancement</a>, whereby users with basic devices can access basic content and features, however care is taken to layer on more sophisticated features for more powerful devices and desktop users.</p>
@@ -1031,8 +965,6 @@ http://javascriptweekly.com/archive/
 <li>Comfortably browsing for fun at home?</li>
 </ul>
 <p>It is near impossible to test on every version of every platform, particularly with something like Android where fragmentation of the feature set is totally unpredictable. Comparison of platforms and statistics regarding particular releases of particular versions of an operating system may need to be considered.</p>
-<!-- @todo: @link to android fragmentation presentation -->
-<!-- @todo: @link to sources for mobile device use? statcounter? etc? -->
 
 <h3 id="responsive-design-best-practices">Responsive Design Best Practices</h3>
 <p>RWD is frequently said to be achieved through the use of:</p>
@@ -1061,7 +993,7 @@ http://javascriptweekly.com/archive/
 <h4 id="media-queries-and-css-breakpoints">Media Queries and CSS Breakpoints</h4>
 <p>Added as part of the CSS3 specification, <strong>media queries</strong> consist of a media type and at least one expression of a media feature (such as height, width and orientation) that describe the conditions under which a set of CSS rules apply. </p>
 <p>For example:</p>
-<pre><code class="language-css"><span class="at_rule">@<span class="keyword">media</span> screen (min-width: <span class="number">300</span>px) and (max-width: <span class="number">800</span>px) </span>{
+<pre><code class="language-css"><span class="at_rule">@<span class="keyword">media</span> screen (max-width: <span class="number">900</span>px) </span>{
   <span class="class">.some-selector</span><span class="rules">{
     <span class="comment">/* CSS declarations go here */</span>
   <span class="rule">}</span></span>
@@ -1079,11 +1011,15 @@ http://javascriptweekly.com/archive/
 <li>Avoid orientation/resolution based specifications in favor of width based ones (remember you are <strong>not</strong> targeting devices!). </li>
 </ul>
 <aside class="box">
-  <p><a href="https://bradfrost.github.io/this-is-responsive/resources.html#media-queries">Media Query Resources</a></p>
-  <p><a href="http://www.smashingmagazine.com/2012/03/device-agnostic-approach-to-responsive-web-design/">A Device Agnostic Approach to Responsive Web Design</a> is a great read on responsive techniques that do not favor one device over another, and are driven by content elements.</p>
+  <p><strong>Newell Specific Breakpoints</strong></p>
+  <ul>
+  	<li>Small Devices &amp Tablets - @media only screen and (min-width : 768px)</li>
+  	<li>Medium Devices - @media only screen and (min-width : 950px)</li>
+  	<li>Desktop &amp; Large Screens - @media only screen and (min-width : 1200px)</li>
+  </ul>
+  <p>All devices smaller than 768px should see the mobile first design</p>
 </aside>
 
-<p>If you are placing breakpoints every 50-100px you are doing something wrong. While there is not a correct number of breakpoints there must be a balance between the control of the design and a manageable code base.</p>
 <p>While working with media queries here are a few things to consider:</p>
 <ul>
 <li>All modern browsers support CSS3 Media Queries (including browsers as far back as the stock Android 2.1 browser)</li>
@@ -1116,35 +1052,24 @@ http://javascriptweekly.com/archive/
 /* SECTION SPECIFIC STYLES - aimed at the smallest devices*/
 .hero {...}
 
-@media(min-width: 600px) {
+@media(min-width: 768px) {
   .hero {
     /* just the new stuff here, no need to be repetitive... */   
   }  
 }
 
-@media(min-width: 800px) {
+@media(min-width: 950px) {
   .hero {
     /* just the new stuff here, no need to be repetitive... */   
   }  
 }
 
-@media(min-width: 1400px) {
+@media(min-width: 1200px) {
   .hero {
     /* might need larger font sizes at largest screen sizes */   
   }  
 }</code></pre>
-<aside class="box">
-  <p>Note: the breakpoints specified above are <strong>not</strong> intended to be recommended breakpoints, but rather just illustrative of this general concept.</p>
-</aside>
 
-<p>Another way of thinking about a mobile first pattern (from a design and development standpoint) is to:</p>
-<ul>
-<li>Innovate for your smallest reasonable target device.</li>
-<li>Then start &quot;sizing your window up&quot; until the user experience or the design degrades.</li>
-<li>Add in a breakpoint and make some design modifications to fix the degradation.</li>
-<li>Resume sizing up your view port until you reach a similar breakdown in design and repeat this exercise.</li>
-</ul>
-<p>Recurse on this until you reach your largest reasonable target device - this is the mobile first pattern. </p>
 <h4 id="speed-is-a-feature">Speed is a feature</h4>
 <p>People expect page load time to be as fast if not faster on their mobile phones in comparison to a desktop experience. </p>
 <ul>
@@ -1182,17 +1107,7 @@ http://javascriptweekly.com/archive/
 <li><strong>Always</strong> optimize your images using a tool such as Adobe Photoshop to assure you have the ideal image size and right amount of lossy compression. </li>
 <li>Run all images though a lossless compressor like <a href="https://compressor.io/">Compressor.io</a>, <a href="https://smush.it">Smush.it</a> or <a href="https://imageoptim.com/">ImageOptim</a> (which has related tools also available as build-time scripts).</li>
 </ul>
-<p>You can also consider “Compressive Images”, which are basically higher-resolution jpegs compressed at a higher percentage rate:</p>
-<ul>
-<li><a href="http://filamentgroup.com/lab/rwd_img_compression/">Compressive Images</a></li>
-<li><a href="http://blog.netvlies.nl/design-interactie/retina-revolution/">Retina Revolution</a></li>
-<li><a href="http://www.vanseodesign.com/web-design/compressive-image-tests/">Compressive Image Tests</a></li>
-</ul>
-<p>However, there are drawbacks:</p>
-<ul>
-<li>The browser tends to use significantly more memory when storing and resizing these higher resolution images than scaling them to fit a container</li>
-</ul>
-<p>What’s important to realize is that this is changing faster than we can develop. What you do now will be obsolete very soon, so be sure to stay on top of current trends.</p>
+
 <h4 id="vector-graphics-svg-">Vector Graphics (SVG)</h4>
 <p>When working with an audience on unknown screen sizes and resolutions, as is the pretense in RWD, having graphics that can scale without degrading is a very appealing prospect. There are several vector implementation options.  </p>
 <p>Web fonts: Fonts are vectors. With the exposure of custom web fonts as part of the CSS level 2 specification, many developers have turned to custom font packages as a solution for icons and simple vectors.</p>
@@ -1205,25 +1120,7 @@ http://javascriptweekly.com/archive/
 <li>Pros: vectors can be manipulated by CSS and/or JavaScript and allows for complex filters, animations and transitions.</li>
 <li>Cons: SVG is only supported by IE9+</li>
 </ul>
-<aside class="box"><p><a href="http://www.filamentgroup.com/lab/grumpicon-workflow.html">Grumpicon</a> is a script that will detect SVG support and server the appropriate CSS (or needed fall back CSS code to assure compatibility.</p></aside>
-
-<h4 id="other-categories">Other Categories</h4>
-<p>Virtually everything can change when screen sizes change:</p>
-<ul>
-<li>Grids</li>
-<li>Typography</li>
-<li>Accessible forms / validation messages</li>
-<li>Main site navigation</li>
-<li>Header or Footer content</li>
-<li>In-page navigation, such as tabbed navigation, or accordions</li>
-<li>Images</li>
-<li>Data tables</li>
-<li>Interactions and animations</li>
-<li>Advertising types</li>
-<li>Performance metrics</li>
-</ul>
-<aside class="box">
-  <p>More thoughts and ideas: <a href="http://www.lukew.com/ff/entry.asp?1514">Multi-device Layout Patterns</a></p></aside>
+<aside class="box"><p><a href="http://www.filamentgroup.com/lab/grumpicon-workflow.html">Grumpicon</a> is a script that will detect SVG support and serve the appropriate CSS (or needed fall back CSS code to assure compatibility.</p></aside>
 
 <h5 id="navigation-changes">Navigation Changes</h5>
 <p>Large horizontal navigation and mega-drop downs are not always practical on smaller screens. Frequently this means off-canvas navigation, collapsing menus into select boxes, or other approaches such as a full-screen overlay.</p>
@@ -1249,7 +1146,7 @@ http://javascriptweekly.com/archive/
 
 <!-- ### Responsive Web Design Deliverables ... @todo: content on responsive design deliverables -->
 
-<h3 id="next-steps-rwd-resources">Next Steps &amp; RWD Resources</h3>
+<!-- <h3 id="next-steps-rwd-resources">Next Steps &amp; RWD Resources</h3>
 <p>Big collections:</p>
 <ul>
 <li><a href="https://bradfrost.github.io/this-is-responsive/resources.html">Responsive Design Resources</a></li>
@@ -1273,7 +1170,7 @@ http://javascriptweekly.com/archive/
 <p>Being a Front-end developer these days covers an enormous spectrum of technologies and techniques.</p>
 <p>We hope to add more content, edit, and revise the content above with more information, samples, and resources.</p>
 <h3 id="advanced-topics">Advanced Topics</h3>
-<p>There&#39;s so much to cover, and so little time. What follows is just a sample of links the team at Newell Rubbermaid regularly uses to find current information. We plan on adding more over time.</p>
+<p>There&#39;s so much to cover, and so little time. What follows is just a sample of links the team at Newell Brands regularly uses to find current information. We plan on adding more over time.</p>
 <h4 id="on-the-server">On the Server</h4>
 <ul>
 <li><a href="http://nodejs.org">Node.js</a></li>
@@ -1315,7 +1212,7 @@ http://javascriptweekly.com/archive/
 <li><a href="https://gist.github.com/3086328">JavaScript Performance</a></li>
 </ul>
 <h4 id="accessibility">Accessibility</h4>
-<p>Newell Rubbermaid regularly codes with accessibility in mind. Links and content coming soon.</p>
+<p>Newell Brands regularly codes with accessibility in mind. Links and content coming soon.</p>
 <ul>
 <li><a href="http://www.w3.org/WAI/intro/aria">ARIA</a></li>
 <li><a href="http://www.w3.org/WAI/Resources/Overview">WAI Resources</a></li>
@@ -1365,7 +1262,7 @@ http://javascriptweekly.com/archive/
 <li><a href="http://javascript.crockford.com/code.html">Douglas Crockford&#39;s JavaScript Conventions</a></li>
 <li><a href="https://github.com/styleguide/javascript">Github JS Styleguide</a></li>
 <li><a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/javascript/">WordPress Core Contributors JS Guide</a></li>
-</ul>
+</ul> -->
 <h3 id="acknowledgments">Acknowledgments</h3>
 <p>And acknowledgments...</p>
 <p>Dozens of folks have contributed to this guide either directly, through project experience, or have served as prior art that has inspired ideas in this document.</p>
@@ -1399,12 +1296,12 @@ http://javascriptweekly.com/archive/
 
         <footer role="contentinfo">
             <div class="footer-inner">
-                <p class="copyright">2015 Newell Rubbermaid, All rights reserved.</p>
+                <p class="copyright">2016 Newell Brands, All rights reserved.</p>
                 <p class="license">All content licensed under Creative Commons Attribution 3.0 Unported License</p>
             </div>
         </footer>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery||document.write("<script src='_assets/js/vendor/jquery-1.11.3.min.js'>\x3C/script>");</script>
         <script src='_assets/js/main.min.js'></script>
 

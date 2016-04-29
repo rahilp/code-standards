@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 @charset "UTF-8";
 /**
  * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
@@ -19,6 +22,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
 }
 
 article, aside, details, figcaption, figure,
@@ -175,13 +179,11 @@ button {
 /**
 ----------------------------------------------------------------------------------------------------
  * Primary styles
- *
- * Author: ISOBAR
 ----------------------------------------------------------------------------------------------------*/
 body {
   background: #fff;
-  color: #444444;
-  border-top: 5px solid #0099ff;
+  color: #696158;
+  border-top: 5px solid #298fc2;
 }
 
 figure {
@@ -254,7 +256,10 @@ select, input, textarea, button {
 /* Normalize monospace sizing:
    en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
 pre, code, kbd, samp {
-  font-family: Consolas, monaco, monospace;
+  font-family: 'Droid Sans Mono', monospace;
+}
+pre span {
+  font-family: 'Droid Sans Mono', monospace;
 }
 
 small {
@@ -282,10 +287,11 @@ sub {
 
 body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  color: #444444;
+  color: #696158;
   /* Set your base font here, to apply evenly */
   font-family: Calibri, sans-serif;
   font-size: 14px;
+  background: #696158;
 }
 
 p {
@@ -301,8 +307,8 @@ p, ol, ul {
 ----------------------------------------------------------------------------------------------------*/
 /* Headers (h1, h2, etc) have no default font-size or margin;define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", sans-serif;
-  color: #0099ff;
+  font-family: "Roboto Slab", sans-serif;
+  color: #298fc2;
   position: relative;
   margin-top: 20px;
 }
@@ -312,15 +318,16 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #000;
+  color: #696158;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1em;
   margin-bottom: 14px;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 h2 {
-  color: #000;
+  color: #696158;
   font-size: 28px;
   margin: 40px 0 12px;
 }
@@ -332,13 +339,13 @@ h3 {
 
 h4 {
   font-size: 20px;
-  color: #999999;
+  color: #696158;
   margin-bottom: 8px;
 }
 
 h5 {
   font-size: 18px;
-  color: #444444;
+  color: #696158;
 }
 
 h2::before {
@@ -351,7 +358,7 @@ h2::before {
   height: 94px;
   font-size: 65px;
   width: 80px;
-  background: none repeat scroll 0% 0% #F74902;
+  background: none repeat scroll 0% 0% #890c58;
   float: left;
   margin: 0px 20px 20px 0px;
 }
@@ -391,6 +398,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   max-width: 970px;
+  background: #fff;
 }
 
 main {
@@ -497,18 +505,19 @@ header {
   width: 100%;
   z-index: 3;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 header a {
-  width: 137px;
-  height: 39px;
+  width: auto;
+  height: 12vw;
   display: inline-block;
 }
 
 header h1 {
   width: 137px;
   padding: 0;
-  height: 40px;
+  height: auto;
   margin-left: 20px;
 }
 
@@ -550,24 +559,24 @@ header canvas {
 }
 
 .menu-open .menu-button:after, .menu-open .menu-button:before {
-  background-color: #0099ff;
+  background-color: #298fc2;
 }
 
 .menu-open .menu-button {
-  border-bottom: 5px solid #0099ff;
+  border-bottom: 5px solid #298fc2;
 }
 
 header h1 a {
-  background: url("../img/NR_Logo.svg") no-repeat 0 0;
-  background-size: auto 80%;
+  background: url("http://menu.newellbrands.com/images/newellbrands_logo.svg") no-repeat 0 0;
   overflow: hidden;
   text-indent: 200%;
   white-space: nowrap;
   display: block;
+  color: #696158;
 }
 
 header .social #linkback:hover {
-  /*color: $isobar-orange;*/
+  /*color: $nbbar-orange;*/
 }
 
 .social {
@@ -593,7 +602,7 @@ header .social #linkback:hover {
 }
 
 .social li:last-child {
-  width: auto;
+  width: 298px;
 }
 
 #linkback {
@@ -607,7 +616,7 @@ header .social #linkback:hover {
 }
 
 #linkback span {
-  color: #0099ff;
+  color: #298fc2;
 }
 
 #linkback:hover {
@@ -627,7 +636,7 @@ header .social #linkback:hover {
 }
 
 .box_notice {
-  background: #0099ff;
+  background: #298fc2;
   color: #ffffff;
 }
 
@@ -678,6 +687,7 @@ header .social #linkback:hover {
 
 .h3 a {
   text-decoration: none;
+  color: #298fc2
 }
 
 .h2 {
@@ -687,6 +697,8 @@ header .social #linkback:hover {
 
 .h2 a {
   text-decoration: none;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #696158
 }
 
 /**
@@ -718,7 +730,7 @@ header .social #linkback:hover {
   }
   /* Don't show links for images, or javascript/internal links */
   pre, blockquote {
-    border: 1px solid #999;
+    border: 1px solid #696158;
     page-break-inside: avoid;
   }
   thead {
@@ -750,7 +762,7 @@ header .social #linkback:hover {
   }
   h1, h2, h3 {
     /* color:#f30; */
-    color: #F74902;
+    color: #696158;
     position: relative;
     margin-top: 20px;
     font-weight: 200;
@@ -758,7 +770,7 @@ header .social #linkback:hover {
   h1 {
     padding: 0;
     margin: 0;
-    color: #00050a;
+    color: #696158;
   }
   header h1 a {
     font-size: 48px;
@@ -786,7 +798,7 @@ header .social #linkback:hover {
     border-top: 90px solid #fff;
   }
   header {
-    border-top: 5px solid #0099ff;
+    border-top: 5px solid #298fc2;
     position: fixed;
     padding-left: 0px;
     z-index: 5;
@@ -818,6 +830,9 @@ header .social #linkback:hover {
   body.menu-open .nav-toc {
     right: 0px;
   }
+  header a {
+    width: 130px;
+  }
 }
 
 @media all and (max-width: 400px) {
@@ -825,7 +840,7 @@ header .social #linkback:hover {
     border-top: 60px solid #fff;
   }
   header {
-    height: 60px;
+    height: 75px;
   }
   header h1 {
     margin-top: 12px;
@@ -845,7 +860,7 @@ header .social #linkback:hover {
    consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 @media screen and (min-width: 770px) {
   p, ol, ul {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -859,7 +874,6 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: white;
   direction: ltr;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   text-align: left;
   text-shadow: 0 -0.1em 0.2em black;
   white-space: pre;
@@ -1092,7 +1106,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999;
+  border-right: 1px solid #696158;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1107,7 +1121,7 @@ pre.line-numbers > code {
 
 .line-numbers-rows > span:before {
   content: counter(linenumber);
-  color: #999;
+  color: #696158;
   display: block;
   padding-right: 0.8em;
   text-align: right;
