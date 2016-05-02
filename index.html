@@ -105,6 +105,54 @@
                         <br> The selection of third party libraries should be CAREFULLY considered and verified with eBusiness/project team.</strong></p>
                     </aside>
 
+                    <h3>Javascript Task Runners</h3>
+                    <p>Javascript task runners such as Grunt and Gulp help to provided consistency in code and provide clean and accessible code.</p>
+                    <p>As a standard, we use GRUNT as our taskrunner of choice. When using Grunt, we have a list of standard NPM plugins we've vetted and recommend.  These include popular plug-ins such as:</p>
+                    <ul>
+                        <li>grunt-contrib-jshint</li>
+                        <li>grunt-contrib-less</li>
+                        <li>grunt-contrib-watch</li>
+                        <li>grunt-processhtml</li>
+                        <li>less-plugin-autoprefix</li>
+                        <li>load-grunt-config</li>
+                        <li>load-grunt-tasks</li>
+                    </ul>
+
+                    <p>All LESS files during dev should be compiled using grunt-contrib-less and less-plugin-autoprefix.  A sample of the gruntfile for these two plugins is below:</p>
+                    <pre><code class="language-css">
+less: {
+
+// Development Env.
+    dev: {        
+        options: {
+            compress: false,
+            sourceMap: true,
+            dumpLineNumbers: 'comments',
+            plugins: [
+                new(require('less-plugin-autoprefix'))({ browsers: ["last 2 versions"] })
+            ],
+        },
+        files: {
+            "css/<%= name %>_custom.css": "css/less/<%= name %>_custom.less",
+        }
+    },
+
+// Production Env.
+    dist: {     
+        options: {
+            compress: true,
+            sourceMap: false,
+            plugins: [
+                new(require('less-plugin-autoprefix'))({ browsers: ["last 2 versions"] })
+            ],
+        },
+        files: {
+            "css/<%= name %>_custom.css": "css/less/<%= name %>_custom.less",
+        }
+    },
+},
+</code></pre>
+
                     <h3 id="deliverables">Deliverables</h3>
                     <p>Quality deliverables are essential. Please remove legacy files, be certain the work is delivered in a clean file system, and in an orderly, logical structure that serves a clear purpose.</p>
                 </section>
@@ -445,6 +493,59 @@ button#backButton { ... }
                     <h4 id="the-mobile-web-media-queries-responsive-design">The Mobile Web, Media Queries, Responsive Design</h4>
                     <p>With the mobile Web taking off Media Queries are mandatory in CSS going forwards.</p>
                     <p>We discuss media queries in the <a href="#responsive_responsive_web_design">Mobile / Responsive</a> section of this document.</p>
+                    <h3 id="css-less">LESS Preprocessing</h3>
+                    <p>Though a slew of preprocessors are available, such as SAAS or LESS, we have opted to make <strong>LESS</strong> our preprocessor of choice.</p>
+                    <h4>Standard LESS File Structure</h4>
+                    <pre><code class="language-css">
+|--Project Root
+    |--css
+        |--project_custom.css
+        |--LESS
+            |--_global.less
+            |--_helpers.less
+            |--_variables.less
+            |--_project_custom.less
+                    </code></pre>
+                    <p>For each Project there should be a project_custom.less in the LESS folder (replace "project" with brand name)This is the ONLY file that should be compiling. This file will include top level (TL) all imports.</p>
+                    File levels should be identified by underscores in the file name.
+                    <h4>Required Files</h4>
+                    <ul>
+                        <li>_variables_less // Used to import LESS files containing variables, mixins, etc.</li>
+                        <li>__fonts.less // Used to define fonts and Typography</li>
+                        <li>__colors.less // Used to define core site colors</li>
+                        <li>_helpers.less // Used to define helpers, such as .clearfix</li>
+                        <li>_global.less // Used to define global attributes, such as buttons, etc.</li>
+                    </ul>
+                    <p>Additional less files should be created at a page or section level</p>
+                    <p>Sample Additonal Files:</p>
+                    <pre><code class="language-css">
+_header.less
+_footer.less
+                    </code></pre>
+                    <h5>Sample project_custom.less file</h5>
+                    <pre><code class="language-css">
+@import "_global";
+@import "_helpers";
+@import "_variables";
+                    </code></pre>
+                    <p>If there is a subsection within a section, i.e. navigation within the header, the file structure should look as such:</p>
+                    <pre><code class="language-css">
+_header.less /* In this file you will @import "__navigation"; where needed*/
+    |__navigation.less /*this will be imported into the _header.less file*/</code>
+                    </pre>
+                    <aside class="box">
+                        <p><strong>*** FILES SHOULD NEVER BE IMPORTED MORE THAN ONCE **</strong>
+                        <br>Importing adds the code to the compiled file, multiple imports will add the imported code
+multiple times to the compiled file.</p>
+                    </aside>
+                    <h4>LESS Tips and Guidelines</h4>
+                    <ul>
+                        <li>Name sectional LESS files the same as the section id if possible; this helps to identify the file for maintainability.</li>
+                        <li>Use cameCase file Name <em>(i.e. _prodFeatures.less)</em></li>
+                        <li>Define Colors, fonts/typography, and global elements first</li>
+                        <li>Consider defining global elements as mixins to help quickly add styles to specific elements.  Mixins can be used as class too <em>(i.e. buttons)</em></li>
+                    </ul>
+                    
                     <h3 id="css-deliverables">CSS Deliverables</h3>
                     <p>Please be aware of potential conflicts between the original development environment for CSS and an ultimate deployment to production systems, if continuous integration will allow the continued use of CSS preprocessors, or if there should a cross-platform development strategy.</p>
                     <p>Delivered CSS should be concatenated, minified, tested against browser bugs (e.g. MSIE selector count bugs) and extra files should be removed.</p>
